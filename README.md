@@ -1,8 +1,2 @@
 # OSSPrac - 오픈소스 소프트웨어 실습 과제 레포지토리
-## Name: SangYoon Chu
-
-## Prac5
-A
-B
-C
 
