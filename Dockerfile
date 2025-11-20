@@ -1,0 +1,15 @@
+# Dockerfile 
+
+# 이미지명
+FROM python:3 
+
+# python 컨테이너에서 사용되는 경로
+# 실제로 본 이미지를 실행해보면 /usr/src/app 경로에서 python이 실행되는 것을 확인 가능함
+# WORKDIR /usr/src/app
+WORKDIR /var/jenkins_home/workspace/prac12p
+
+# 현재 local 경로에 있는 폴더(prac12)를 컨테이너 내부로 copy함
+COPY . . 
+
+# python ./main.py가 실행됨. 이때, main.py는 
+CMD [ "python", "./main.py" ]
